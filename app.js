@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mongoose.set("strictQuery",false);
-mongoose.connect("mongodb+srv://admin-aritra:hello123@cluster0.8a9fiy3.mongodb.net/todolistDB");
+mongoose.connect("mongodb+srv://admin-aritra:<password>@cluster0.8a9fiy3.mongodb.net/todolistDB");
 
 const itemsSchema=new mongoose.Schema({
   name: String
